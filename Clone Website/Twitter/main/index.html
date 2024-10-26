@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="own.css">
+</head>
+
+<body class=" bg-black text-white overflow-x-hidden ">
+    <main class="flex container mx-auto w-[80vw] ">
+
+        <!-- left part starts -->
+        <div class="left  w-[40%]  sticky top-0">
+            <div class="left-sidebar flex flex-col xl:items-start items-end text-[1.2rem] sticky top-0 ">
+                <div class="logo flex xl:justify-start justify-end  xl:m-3 m-0">
+                    <img src="/images/logo.png" class="w-12" alt="">
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        home
+                    </span>
+                    <a href="#home" class="xl:w-fit hidden xl:block font-[500]">Home
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        search
+                    </span>
+                    <a href="#Explore" class="w-fit hidden xl:block font-[500]">Explore
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        notifications
+                    </span>
+                    <a href="#Notification" class="w-fit hidden xl:block font-[500]">Notification
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        mail
+                    </span>
+                    <a href="#Message" class="w-fit hidden xl:block font-[500]">Message
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        check_box_outline_blank
+                    </span>
+                    <a href="#Grok" class="w-fit hidden xl:block font-[500]">Grok
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        group
+                    </span>
+                    <a href="#Communities" class="w-fit hidden xl:block font-[500]">Communities
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        group
+                    </span>
+                    <a href="#Premium" class="w-fit hidden xl:block font-[500]">Premium
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        person
+                    </span>
+                    <a href="#Profile" class="w-fit hidden xl:block font-[500]">Profile
+                    </a>
+                </div>
+                <div
+                    class="sidebar-icon cursor-pointer flex items-center justify-around  ml-3 gap-2  hover:bg-gray-500 hover:bg-opacity-20 hover:rounded-full p-3 ">
+                    <span class="font text-[3rem] text-white material-symbols-outlined">
+                        more
+                    </span>
+                    <a href="#More" class="w-fit hidden xl:block font-[500]">More
+                    </a>
+                </div>
+                <div class="flex m-3 w-30 h-[4rem] ">
+                    <a href="#Post" class="h-[4.5rem]">
+                        <button
+                            class="text-white bg-blue-500 xl:w-[16rem] font-[600] rounded-[5rem] py-3 hidden xl:block">Post</button>
+
+                    </a>
+                    <button class=" flex items-center xl:hidden rounded-full  py-0 px-4 ml-2 bg-blue-500">
+                        <span class="material-symbols-outlined">
+                            ink_pen
+                        </span>
+                    </button>
+                </div>
+                <div class="profile flex  h-[4rem] xl:justify-start justify-end  px-3 ">
+                    <img src="https://pbs.twimg.com/profile_images/1610290823396233221/FvPuKIbg_x96.jpg"
+                        class="rounded-full w-12 h-14" alt="profile">
+
+                    <div class="name flex flex-col  items-center mx-3 xl:block hidden relative">
+                        <span class="text-[1rem] font-semibold">Gaurish Naik</span>
+                        <span class="text-[1rem] font-[300] text-stone-400">@Gaurish91042976</span>
+                        <span class="material-symbols-outlined hidden xl:block absolute bottom-10">
+                            more_horiz
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+        <!-- left part ends -->
+
+        <!-- middle part starts here -->
+        <div class="middle mx-4 lg:w-full border border-x-gray-700 border-y-black w-[40rem]">
+            <div class="top border border-transparent p-3 flex justify-around gap-6 text-gray-600 font-semibold">
+                <h4>For you</h4>
+                <h4 class="font-semibold text-white relative ">Following <div
+                        class="w-full border-2 border-blue-500 absolute top-[34px]  rounded-full"></div>
+                </h4>
+            </div>
+            <div class="your-posts h-42 w-full border border-x-transparent  border-y-gray-700">
+                <div class="your-post pt-3 px-4 flex justify-start items-center  gap-2">
+                    <img src="https://pbs.twimg.com/profile_images/1610290823396233221/FvPuKIbg_x96.jpg"
+                        class="rounded-full w-10" alt="profile">
+                    <div class="comment flex text-gray-900 items-center text-[1.2rem]">
+                        <input type="text" placeholder="What is happening?!"
+                            class="bg-transparent outline-none text-white ">
+                    </div>
+                </div>
+                <div class="icons flex justify-between mb-3 items-center w-full mt-5">
+                    <div class="icons-container flex gap-4  ml-16">
+                        <span class="material-symbols-outlined text-blue-400  font-s">
+                            imagesmode
+                        </span>
+                        <span class="material-symbols-outlined text-blue-400 font-s">
+                            gif_box
+                        </span>
+                        <span class="material-symbols-outlined text-blue-400 font-s">
+                            ballot
+                        </span>
+                        <span class="material-symbols-outlined text-blue-400 font-s">
+                            mood
+                        </span>
+                        <span class="material-symbols-outlined text-blue-400 font-s">
+                            calendar_clock
+                        </span>
+                        <span class="material-symbols-outlined text-blue-400 font-s">
+                            location_on
+                        </span>
+                    </div>
+                    <div class="btn rounded-full flex justify-end">
+                        <button
+                            class=" px-5 py-[0.3rem] text-white font-semibold rounded-full bg-blue-500 mr-3">Post</button>
+                    </div>
+                </div>
+                <div class="w-full border-gray-700 border "></div>
+                <p class="text-blue-500 w-full flex justify-center p-2">Show 1 post</p>
+            </div>
+
+            <div class="posts w-full h-auto  border border-x-transparent border-t-transparent border-b-gray-700">
+                <div class="post-person p-2 flex h-14">
+                    <div class="name-container flex pt-1 pl-3 ">
+                        <img src="https://pbs.twimg.com/profile_images/1807134036449529856/2TB7kbUM_bigger.jpg"
+                            class="w-12 h-12 rounded-full" alt="">
+                        <div class="post-name flex flex-col ml-2 gap-1">
+                            <div class="text flex items-center">
+                                <span class="font-semibold flex items-center gap-1">
+                                    Mufaddal Vohra<span class="material-symbols-outlined  text-blue-600">
+                                        verified
+                                    </span> <span class="text-[0.9rem] font-medium text-gray-500">@mufaddal_vohra</span>
+                                </span>
+                            </div>
+
+                            <span class="font-medium text-[0.9rem] ">Virat Kohli with Gautam Gambhir in the practice
+                                session.
+                                😂❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <span class="material-symbols-outlined text-gray-700">
+                            more_horiz
+                        </span>
+                    </div>
+                </div>
+                <div class="post-image flex justify-center ml-10 mt-3 w-fill  ">
+                    <img class="w-[30rem] h-[19rem] rounded-xl "
+                        src="https://pbs.twimg.com/media/GYUaj6OasAA8Jg0?format=jpg&name=large" alt="">
+                </div>
+                <div class="post-icon flex justify-around items-center ml-12  my-2 ">
+                    <div class="icons-1  justify-center flex gap-14    mx-auto
+                      text-gray-700">
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                mode_comment
+                            </span><span>
+                                147
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                repeat
+                            </span><span>
+                                130
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span><span>
+                                2k
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                equalizer
+                            </span><span>
+                                25k
+                            </span>
+                        </div>
+                    </div>
+                    <div class="icons-2 flex items-center  w-22 justify-end mr-6">
+                        <div class="wrap flex items-center justify-center  text-gray-700">
+                            <span class="material-symbols-outlined">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined">
+                                ios_share
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts w-full h-auto  border border-x-transparent border-t-transparent border-b-gray-700">
+                <div class="post-person p-2 flex h-14">
+                    <div class="name-container flex pt-1 pl-3 ">
+                        <img src="https://pbs.twimg.com/profile_images/1807134036449529856/2TB7kbUM_bigger.jpg"
+                            class="w-12 h-12 rounded-full" alt="">
+                        <div class="post-name flex flex-col ml-2 gap-1">
+                            <div class="text flex items-center">
+                                <span class="font-semibold flex items-center gap-1">
+                                    Mufaddal Vohra<span class="material-symbols-outlined  text-blue-600">
+                                        verified
+                                    </span> <span class="text-[0.9rem] font-medium text-gray-500">@mufaddal_vohra</span>
+                                </span>
+                            </div>
+
+                            <span class="font-medium text-[0.9rem] ">Virat Kohli with Gautam Gambhir in the practice
+                                session.
+                                😂❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <span class="material-symbols-outlined text-gray-700">
+                            more_horiz
+                        </span>
+                    </div>
+                </div>
+                <div class="post-image flex justify-center ml-10 mt-3 w-fill  ">
+                    <img class="w-[30rem] h-[19rem] rounded-xl "
+                        src="https://pbs.twimg.com/media/GYUaj6OasAA8Jg0?format=jpg&name=large" alt="">
+                </div>
+                <div class="post-icon flex justify-around items-center ml-12  my-2 ">
+                    <div class="icons-1  justify-center flex gap-14    mx-auto
+                      text-gray-700">
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                mode_comment
+                            </span><span>
+                                147
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                repeat
+                            </span><span>
+                                130
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span><span>
+                                2k
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                equalizer
+                            </span><span>
+                                25k
+                            </span>
+                        </div>
+                    </div>
+                    <div class="icons-2 flex items-center  w-22 justify-end mr-6">
+                        <div class="wrap flex items-center justify-center  text-gray-700">
+                            <span class="material-symbols-outlined">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined">
+                                ios_share
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts w-full h-auto  border border-x-transparent border-t-transparent border-b-gray-700">
+                <div class="post-person p-2 flex h-14">
+                    <div class="name-container flex pt-1 pl-3 ">
+                        <img src="https://pbs.twimg.com/profile_images/1807134036449529856/2TB7kbUM_bigger.jpg"
+                            class="w-12 h-12 rounded-full" alt="">
+                        <div class="post-name flex flex-col ml-2 gap-1">
+                            <div class="text flex items-center">
+                                <span class="font-semibold flex items-center gap-1">
+                                    Mufaddal Vohra<span class="material-symbols-outlined  text-blue-600">
+                                        verified
+                                    </span> <span class="text-[0.9rem] font-medium text-gray-500">@mufaddal_vohra</span>
+                                </span>
+                            </div>
+
+                            <span class="font-medium text-[0.9rem] ">Virat Kohli with Gautam Gambhir in the practice
+                                session.
+                                😂❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <span class="material-symbols-outlined text-gray-700">
+                            more_horiz
+                        </span>
+                    </div>
+                </div>
+                <div class="post-image flex justify-center ml-10 mt-3 w-fill  ">
+                    <img class="w-[30rem] h-[19rem] rounded-xl "
+                        src="https://pbs.twimg.com/media/GYUaj6OasAA8Jg0?format=jpg&name=large" alt="">
+                </div>
+                <div class="post-icon flex justify-around items-center ml-12  my-2 ">
+                    <div class="icons-1  justify-center flex gap-14    mx-auto
+                      text-gray-700">
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                mode_comment
+                            </span><span>
+                                147
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                repeat
+                            </span><span>
+                                130
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span><span>
+                                2k
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                equalizer
+                            </span><span>
+                                25k
+                            </span>
+                        </div>
+                    </div>
+                    <div class="icons-2 flex items-center  w-22 justify-end mr-6">
+                        <div class="wrap flex items-center justify-center  text-gray-700">
+                            <span class="material-symbols-outlined">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined">
+                                ios_share
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="posts w-full h-auto  border border-x-transparent border-t-transparent border-b-gray-700">
+                <div class="post-person p-2 flex h-14">
+                    <div class="name-container flex pt-1 pl-3 ">
+                        <img src="https://pbs.twimg.com/profile_images/1807134036449529856/2TB7kbUM_bigger.jpg"
+                            class="w-12 h-12 rounded-full" alt="">
+                        <div class="post-name flex flex-col ml-2 gap-1">
+                            <div class="text flex items-center">
+                                <span class="font-semibold flex items-center gap-1">
+                                    Mufaddal Vohra<span class="material-symbols-outlined  text-blue-600">
+                                        verified
+                                    </span> <span class="text-[0.9rem] font-medium text-gray-500">@mufaddal_vohra</span>
+                                </span>
+                            </div>
+
+                            <span class="font-medium text-[0.9rem] ">Virat Kohli with Gautam Gambhir in the practice
+                                session.
+                                😂❤️</span>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <span class="material-symbols-outlined text-gray-700">
+                            more_horiz
+                        </span>
+                    </div>
+                </div>
+                <div class="post-image flex justify-center ml-10 mt-3 w-fill  ">
+                    <img class="w-[30rem] h-[19rem] rounded-xl "
+                        src="https://pbs.twimg.com/media/GYUaj6OasAA8Jg0?format=jpg&name=large" alt="">
+                </div>
+                <div class="post-icon flex justify-around items-center ml-12  my-2 ">
+                    <div class="icons-1  justify-center flex gap-14    mx-auto
+                        text-gray-700">
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                mode_comment
+                            </span><span>
+                                147
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                repeat
+                            </span><span>
+                                130
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span><span>
+                                2k
+                            </span>
+                        </div>
+                        <div class="wrap flex gap-2">
+                            <span class="material-symbols-outlined">
+                                equalizer
+                            </span><span>
+                                25k
+                            </span>
+                        </div>
+                    </div>
+                    <div class="icons-2 flex items-center  w-22 justify-end mr-6">
+                        <div class="wrap flex items-center justify-center  text-gray-700">
+                            <span class="material-symbols-outlined">
+                                bookmark
+                            </span>
+                            <span class="material-symbols-outlined">
+                                ios_share
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- middle part ends here -->
+
+        <!-- right part starts here -->
+        <div class="right w-[55%] sticky top-0 lg:block hidden">
+            <div class="right-wrap sticky top-0 ">
+                <div class="search w-full flex m-4 ">
+                    <span class="material-symbols-outlined rounded-l-full  text-xl px-3 py-2  bg-stone-700 opacity-60">
+                        search
+                    </span>
+                    <input type="text" placeholder="Search"
+                        class=" w-full rounded-r-full outline-none text-[1rem] px-3 py-2 bg-stone-700 opacity-60">
+                </div>
+
+                <div class="premium border border-gray-700 m-4 p-3 rounded-[1rem] w-full ">
+                    <h4 class="font-bold text-[1.2rem] tracking-wider mb-2">Subscribe to Premium</h4>
+                    <p class="text-[0.9rem] text-gray-300 tracking-tight">Subscribe to unlock new features and if
+                        eligible,
+                        receive a share of ads revenue</p>
+                    <button class="font-bold py-[0.4rem] mt-2 px-4 rounded-full w-30 bg-blue-500">Subscribe</button>
+                </div>
+
+                <div class="happing border h-auto w-full border-gray-700 m-4 p-3 rounded-[1rem]">
+                    <h3 class="font-bold text-[1.2rem] tracking-normal mb-2">What’s happening</h3>
+
+                    <div class="image-content flex">
+                        <img class="w-1/4 rounded-xl mr-3"
+                            src="https://pbs.twimg.com/semantic_core_img/1835626573711462400/_GhxC2TG?format=jpg&name=240x240"
+                            alt="">
+                        <div class="image-detail">
+                            <h5 class="font-semibold">Paris Fashion Week 2024 Womenswear SS25</h5>
+                            <p class="font-light text-gray-500 text-[12px] flex gap-2">Fashion &nbsp; &#x2022;
+                                &nbsp;LIVE
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="trending mt-3 flex  flex-col cursor-pointer">
+                        <div
+                            class="trending-box p-2 hover:bg-gray-500 hover:bg-opacity-10 hover:rounded-lg  flex flex-col">
+                            <span class="font-light text-gray-400 text-[12px]">Entertainment &#x2022; Trending </span>
+                            <span class="font-semibold">#TriptiDimri</span>
+                            <span class="font-light text-gray-500 text-[12px]">1,921 posts</span>
+                        </div>
+                        <div
+                            class="trending-box p-2 hover:bg-gray-500 hover:bg-opacity-10 hover:rounded-lg  flex flex-col">
+                            <span class="font-light text-gray-400 text-[12px]">Trending </span>
+                            <span class="font-semibold">#MumbaiRain</span>
+                            <span class="font-light text-gray-500 text-[12px]">1,921 posts</span>
+                        </div>
+                        <div
+                            class="trending-box p-2 hover:bg-gray-500 hover:bg-opacity-10 hover:rounded-lg  flex flex-col">
+                            <span class="font-light text-gray-400 text-[12px]">Sports &#x2022; Trending </span>
+                            <span class="font-semibold">#Yashasvi Jaiswal</span>
+                            <span class="font-light text-gray-500 text-[12px]">1,921 posts</span>
+                        </div>
+                        <div
+                            class="trending-box p-2 hover:bg-gray-500 hover:bg-opacity-10 hover:rounded-lg  flex flex-col">
+                            <span class="font-light text-gray-400 text-[12px]">Entertainment &#x2022; Trending </span>
+                            <span class="font-semibold">#KiaraAdvani</span>
+                            <span class="font-light text-gray-500 text-[12px]">2,321 posts</span>
+                        </div>
+                    </div>
+
+                    <h5 class="text-[14px] mt-3 text-blue-400">Show more</h5>
+                </div>
+            </div>
+        </div>
+        <!-- right part ends here -->
+    </main>
+</body>
+
+</html>

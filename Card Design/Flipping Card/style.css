@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", system-ui;
+}
+section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #12131f;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  perspective: 1000px;
+}
+section::before {
+  content: "";
+  border-radius: 50%;
+  height: 147px;
+  width: 152px;
+  /* border: 2px solid white; */
+  position: absolute;
+  background: linear-gradient(90deg, #ff00ae, #f3f5f5);
+  transform: translate(-121px, -57px);
+}
+section::after {
+  content: "";
+  border-radius: 50%;
+  height: 147px;
+  width: 152px;
+  /* border: 2px solid white; */
+  position: absolute;
+  background: linear-gradient(90deg, #ff00ae, #f3f5f5);
+  transform: translate(127px, 57px);
+}
+.container {
+  position: relative;
+  height: 150px;
+  width: 280px;
+  z-index: 100;
+  transition: 1.6s;
+  transform-style: preserve-3d;
+}
+
+.card-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(25px);
+  border-radius: 25px;
+  background: rgb(255, 255, 255,0.1);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  backface-visibility: hidden;
+}
+.container:hover {
+  transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 408px) {
+  section::before {
+    display: none;
+  }
+  section::after {
+    display: none;
+  }
+}
+
+.card-top {
+  margin: auto;
+  width: 270px;
+  height: 50px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px 80px;
+}
+.card-top .logo-container {
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 3px;
+}
+
+.logo-img {
+  width: 30px;
+}
+span.logo-name {
+  color: white;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chip-img {
+  width: 35px;
+  border-radius: 4px;
+}
+
+.card-middle {
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 2px 25px;
+  gap: 5px;
+  font-size: 15px;
+}
+.cnumber {
+  color: white;
+  font-size: 8px;
+}
+.number {
+  color: white;
+}
+
+.card-bottom {
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.cholder {
+  color: white;
+  font-size: 14px;
+}
+.valid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+}
+.valid .cvalid {
+  font-size: 6px;
+}
+
+.valid .vdate {
+  font-size: 12px;
+}
+.card-back {
+  transform: rotateY(180deg);
+}
+
+.back-top {
+  /* border: 1px solid white; */
+  padding: 2px 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  position: relative;
+}
+.back-top h6 {
+  font-size: 6px;
+  font-weight: 400;
+  color: white;
+}
+.backbox {
+  height: 35px;
+  width: 310px;
+  background-color: black;
+}
+.back-middle {
+  margin-top: 5px;
+  /* border: 1px solid white; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cv-box {
+  border: 1px solid white;
+  height: 20px;
+  width: 240px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 2px;
+  background-color: white;
+  border-radius: 4px;
+}
+.cv-number {
+  /* padding-top: 14px; */
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.whitebox {
+  height: 30px;
+  /* border: 2px solid black; */
+  background-color: rgb(222, 248, 248);
+  border-radius: 5px;
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  width: 215px;
+}
+
+.back-bottom {
+  /* border: 1px solid white; */
+  padding: 2px 14px;
+}
+.back-bottom p {
+  color: white;
+  font-size: 8px;
+  text-align: left;
+}
